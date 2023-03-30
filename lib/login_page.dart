@@ -10,6 +10,16 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  @override
+  void diapose() {
+    emailController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,8 +37,9 @@ class _LoginPageState extends State<LoginPage> {
                   )
                 ),
                 width: MediaQuery.of(context).size.width * .8,
-                child: const TextField(
-                  style: TextStyle(
+                child: TextField(
+                  controller: emailController,
+                  style: const TextStyle(
                     fontSize: 30,
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
@@ -56,14 +67,15 @@ class _LoginPageState extends State<LoginPage> {
                   )
                 ),
                 width: MediaQuery.of(context).size.width * .8,
-                child: const TextField(
-                  style: TextStyle(
+                child: TextField(
+                  controller: passwordController,
+                  style: const TextStyle(
                     fontSize: 30,
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
                   ),
                   decoration: InputDecoration(
-                    hintText: 'Email',
+                    hintText: 'Password',
                     hintStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 25,
