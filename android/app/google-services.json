@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "821904471340",
+    "project_id": "flutter-firebase-auth-prj3",
+    "storage_bucket": "flutter-firebase-auth-prj3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821904471340:android:083f294cc1d59ca822e889",
+        "android_client_info": {
+          "package_name": "com.example.authentication_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821904471340-v8d0es5mm3n6o2c61p2b3q4rg7819vpe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC2ZNnrnutXlmeVNZpYfPsRc8q6REXeLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821904471340-v8d0es5mm3n6o2c61p2b3q4rg7819vpe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
