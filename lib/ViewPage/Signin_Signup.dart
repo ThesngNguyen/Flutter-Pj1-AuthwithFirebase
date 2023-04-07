@@ -14,6 +14,7 @@ class _SignInOrSignUpState extends State<SignInOrSignUp> {
 
   bool showSigninPage = true;
 
+  ///Toggle Pages
   void togglePages() {
     setState(() {
       showSigninPage = !showSigninPage;
