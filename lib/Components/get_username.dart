@@ -17,8 +17,9 @@ class getUserName extends StatelessWidget {
       builder: ((context, snapshot) {
       if (snapshot.connectionState == ConnectionState.done) {
         Map<String, dynamic> data = snapshot.data!.data() as Map<String, dynamic>;
-        String displayName = '${data['firstName']} ${data['lastName']}';
 
+        ///Update displayName to firebaseAuth
+        String displayName = '${data['firstName']} ${data['lastName']}';
         FirebaseAuth auth = FirebaseAuth.instance;
         auth.currentUser!.updateDisplayName(displayName);
         return Text(
