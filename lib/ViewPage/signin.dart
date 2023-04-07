@@ -211,8 +211,7 @@ class _SigninPageState extends State<SigninPage> {
 
               const SizedBox(height: 15),
             
-            
-              // register
+              // Register
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
