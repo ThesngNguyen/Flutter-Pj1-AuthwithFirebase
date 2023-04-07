@@ -55,6 +55,7 @@ class _SignupPageState extends State<SignupPage> {
           emailController.text, 
           passwordController.text);
         
+        ///Update displayName after register
         String displayName = '${firstnameController.text} ${lastnameController.text}';
         FirebaseAuth auth = FirebaseAuth.instance;
         auth.currentUser!.updateDisplayName(displayName);
