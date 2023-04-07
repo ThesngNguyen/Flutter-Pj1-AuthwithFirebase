@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar( 
         title: Text(
-          'Signed in as : ${user?.displayName}' ,
+          'Signed in as : ${user?.displayName}' , ///Add DisplayName
           ),
       ),
       body: Center(
