@@ -9,3 +9,5 @@ A new Flutter project.
 - Change Homepage view 
 - Add togglePage method ( SignIn and SignUp )
 
+4/10/2023
+- Add using without login ( AuthPage )
